@@ -1,0 +1,29 @@
+# virtual env
+quant-bench-env/
+venv/
+__pycache__/
+*.pyc
+
+# model weights & quantized checkpoints — these are GBs, never commit
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+checkpoints/
+models/
+*_quantized/
+
+# HF / datasets cache if it lands inside the repo folder
+.cache/
+hf_cache/
+
+# logs, results you might want to keep OUT of git until finalized
+wandb/
+runs/
+*.log
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+*.swp
